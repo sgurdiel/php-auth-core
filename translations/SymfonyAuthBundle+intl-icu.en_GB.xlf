@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en-GB" target-language="en-GB" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="signUp">
+        <source>signUp</source>
+        <target>Sign up</target>
+      </trans-unit>
+      <trans-unit id="signIn">
+        <source>signIn</source>
+        <target>Sign In</target>
+      </trans-unit>
+      <trans-unit id="email">
+        <source>email</source>
+        <target>E-mail</target>
+      </trans-unit>
+      <trans-unit id="password">
+        <source>password</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id="currentPassword">
+        <source>currentPassword</source>
+        <target>Current password</target>
+      </trans-unit>
+      <trans-unit id="newPassword">
+        <source>newPassword</source>
+        <target>New password</target>
+      </trans-unit>
+      <trans-unit id="reenterPassword">
+        <source>reenterPassword</source>
+        <target>Repeat password</target>
+      </trans-unit>
+      <trans-unit id="minPasswordLength">
+        <source>minPasswordLength</source>
+        <target>{count, plural, other {Your password should be at least {limit} characters}}</target>
+      </trans-unit>
+      <trans-unit id="invalidEmail">
+        <source>invalidEmail</source>
+        <target>Invalid e-mail address</target>
+      </trans-unit>
+      <trans-unit id="invalidUserRole">
+        <source>invalidUserRole</source>
+        <target>Invalid user role.</target>
+      </trans-unit>
+      <trans-unit id="errorPasswordsDifferent">
+        <source>errorPasswordsDifferent</source>
+        <target>Invalid user role.</target>
+      </trans-unit>
+      <trans-unit id="mustAgreeTerms">
+        <source>mustAgreeTerms</source>
+        <target>You must agree to the terms and conditions</target>
+      </trans-unit>
+      <trans-unit id="logout">
+        <source>logout</source>
+        <target>Logout</target>
+      </trans-unit>
+      <trans-unit id="accountEmailExists">
+        <source>accountEmailExists</source>
+        <target>An account with the e-mail address exists</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

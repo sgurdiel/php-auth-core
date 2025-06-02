@@ -1,0 +1,60 @@
+name: PHPUnit test & Static code analysis
+
+on:
+  push:
+    branches: [ "main" ]
+    paths-ignore:
+      - '**.md'
+      - LICENSE
+      - 'translations/**'
+  pull_request:
+    branches: [ "main" ]
+    paths-ignore:
+      - '**.md'
+      - LICENSE
+      - 'translations/**'
+
+env:
+  XDEBUG_MODE: coverage
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: php-auth-core
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup devbox
+      uses: jetify-com/devbox-install-action@v0.13.0
+      with:
+        # Caching the entire Nix store in github based on your devbox.json
+        enable-cache: true
+
+    - name: Validate composer.json and composer.lock
+      run: devbox run composer validate --strict
+
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v4
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+
+    - name: Install dependencies
+      run: devbox run composer install --prefer-dist --no-progress --optimize-autoloader
+
+    - name: Run all test suites
+      run: devbox run vendor/bin/phpunit --testsuite=all --coverage-text
+       
+    - name: Psalm static code analysis
+      run: devbox run vendor/bin/psalm

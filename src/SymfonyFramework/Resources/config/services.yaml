@@ -1,0 +1,11 @@
+services:
+    _defaults:
+        autowire: true      
+        autoconfigure: true
+
+    Xver\SymfonyAuthBundle\:
+        resource: '../../../'
+        exclude:
+            - '../../../SymfonyFramework/'
+            - '../../../Kernel.php'
+            - '../../../SymfonyAuthBundle.php'
