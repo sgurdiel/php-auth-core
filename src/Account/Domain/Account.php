@@ -2,6 +2,7 @@
 
 namespace Xver\SymfonyAuthBundle\Account\Domain;
 
+use InvalidArgumentException;
 use Symfony\Component\Translation\TranslatableMessage;
 use Symfony\Component\Uid\Uuid;
 use Xver\PhpAppCoreBundle\Entity\Domain\EntityInterface;
@@ -54,7 +55,7 @@ class Account implements AccountInterface
     public function sameId(EntityInterface $otherEntity): bool
     {
         if (!$otherEntity instanceof Account) {
-            throw new \InvalidArgumentException();
+            throw new InvalidArgumentException();
         }
 
         return $this->getId()->equals($otherEntity->getId());

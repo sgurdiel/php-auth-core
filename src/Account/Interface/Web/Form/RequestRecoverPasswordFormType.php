@@ -27,7 +27,7 @@ class RequestRecoverPasswordFormType extends AbstractType
                 'required' => true,
                 'constraints' => [
                     new NotBlank(),
-                    new Email([], 'invalidEmail'),
+                    new Email(null, 'invalidEmail'),
                 ],
             ])
         ;

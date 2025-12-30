@@ -5,8 +5,7 @@
   },
   "packages": [
     "php@8.4",
-    "php84Extensions.xdebug@latest",
-    "gh@latest"
+    "php84Extensions.xdebug@latest"
   ],
   "shell": {
     "init_hook": [

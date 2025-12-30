@@ -30,10 +30,11 @@ jobs:
       fail-fast: false
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
     
     - name: Setup devbox
-      uses: jetify-com/devbox-install-action@v0.13.0
+      uses: jetify-com/devbox-install-action@v0.14.0
       with:
         # Caching the entire Nix store in github based on your devbox.json
         enable-cache: true

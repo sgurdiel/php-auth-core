@@ -2,6 +2,7 @@
 
 namespace Xver\SymfonyAuthBundle\Tests\unit\Account\Interface\Web\Form;
 
+use PHPUnit\Framework\Attributes\AllowMockObjectsWithoutExpectations;
 use PHPUnit\Framework\Attributes\CoversClass;
 use Symfony\Component\Form\Test\Traits\ValidatorExtensionTrait;
 use Symfony\Component\Form\Test\TypeTestCase;
@@ -11,6 +12,7 @@ use Xver\SymfonyAuthBundle\Account\Interface\Web\Form\RequestRecoverPasswordForm
  * @internal
  */
 #[CoversClass(RequestRecoverPasswordFormType::class)]
+#[AllowMockObjectsWithoutExpectations]
 class RequestRecoverPasswordFormTypeTest extends TypeTestCase
 {
     use ValidatorExtensionTrait;

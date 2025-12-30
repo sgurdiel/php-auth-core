@@ -38,11 +38,7 @@ class ResetPasswordFormType extends AbstractType
                     'attr' => ['autocomplete' => 'new-password'],
                     'constraints' => [
                         new NotBlank(),
-                        new Length([
-                            'min' => 8,
-                            // max length allowed by Symfony for security reasons
-                            'max' => 200,
-                        ]),
+                        new Length(null, 8, 200),
                     ],
                 ],
                 'second_options' => ['label' => new TranslatableMessage(

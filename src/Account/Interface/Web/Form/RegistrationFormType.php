@@ -33,7 +33,7 @@ class RegistrationFormType extends AbstractType
                 'required' => true,
                 'constraints' => [
                     new NotBlank(),
-                    new Email([], 'invalidEmail'),
+                    new Email(null, 'invalidEmail'),
                 ],
             ])
             ->add('plainPassword', RepeatedType::class, [
@@ -57,11 +57,7 @@ class RegistrationFormType extends AbstractType
                     ),
                     'constraints' => [
                         new NotBlank(),
-                        new Length([
-                            'min' => 8,
-                            // max length allowed by Symfony for security reasons
-                            'max' => 200,
-                        ]),
+                        new Length(null, 8, 200),
                     ],
                 ],
                 'second_options' => ['label' => new TranslatableMessage(
@@ -76,13 +72,12 @@ class RegistrationFormType extends AbstractType
                 'translation_domain' => false,
                 'required' => true,
                 'constraints' => [
-                    new IsTrue([
-                        'message' => new TranslatableMessage(
+                    new IsTrue(null, (new TranslatableMessage(
                             'mustAgreeTerms',
                             [],
                             'SymfonyAuthBundle'
-                        ),
-                    ]),
+                        ))->getMessage(),
+                    ),
                 ],
             ])
         ;

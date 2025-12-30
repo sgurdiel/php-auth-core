@@ -2,6 +2,7 @@
 
 namespace Xver\SymfonyAuthBundle\Tests\unit\Auth\Application;
 
+use PHPUnit\Framework\Attributes\AllowMockObjectsWithoutExpectations;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\TestCase;
@@ -20,6 +21,7 @@ use Xver\SymfonyAuthBundle\Auth\Domain\AuthUser;
  */
 #[CoversClass(AuthProvider::class)]
 #[UsesClass(AuthUser::class)]
+#[AllowMockObjectsWithoutExpectations]
 class AuthProviderTest extends TestCase
 {
     public function testLoadUserByIdentifierThrowsUserNotFoundException(): void
