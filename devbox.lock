@@ -2,103 +2,103 @@
   "lockfile_version": "1",
   "packages": {
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "last_modified": "2025-12-29T16:45:58Z",
-      "resolved": "github:NixOS/nixpkgs/346dd96ad74dc4457a9db9de4f4f57dab2e5731d?lastModified=1767026758&narHash=sha256-7fsac%2Ff7nh%2FVaKJ%2Fqm3I338%2BwAJa%2F3J57cOGpXi0Sbg%3D"
+      "last_modified": "2026-04-16T08:46:55Z",
+      "resolved": "github:NixOS/nixpkgs/b86751bc4085f48661017fa226dee99fab6c651b?lastModified=1776329215&narHash=sha256-a8BYi3mzoJ%2FAcJP8UldOx8emoPRLeWqALZWu4ZvjPXw%3D"
     },
     "php84Extensions.xdebug@latest": {
-      "last_modified": "2025-12-15T04:22:15Z",
-      "resolved": "github:NixOS/nixpkgs/09b8fda8959d761445f12b55f380d90375a1d6bb#php84Extensions.xdebug",
+      "last_modified": "2026-04-15T03:58:42Z",
+      "resolved": "github:NixOS/nixpkgs/975dad1a84d727dce241bb41b27191948fa5a956#php84Extensions.xdebug",
       "source": "devbox-search",
-      "version": "3.5.0",
+      "version": "3.5.1",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/692g9dd04crcqm25jx55mr5rnqi6s7yk-php-xdebug-3.5.0",
+              "path": "/nix/store/fylr7ydsz6radcda3h46ajnzv2fhy8hx-php-xdebug-3.5.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/692g9dd04crcqm25jx55mr5rnqi6s7yk-php-xdebug-3.5.0"
+          "store_path": "/nix/store/fylr7ydsz6radcda3h46ajnzv2fhy8hx-php-xdebug-3.5.1"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/6pkxg0gkkih2icqyai69wxlqickfzqd5-php-xdebug-3.5.0",
+              "path": "/nix/store/h1p0fjkvsvqn4qxzrc8kqfx3w8l8x3ps-php-xdebug-3.5.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/6pkxg0gkkih2icqyai69wxlqickfzqd5-php-xdebug-3.5.0"
+          "store_path": "/nix/store/h1p0fjkvsvqn4qxzrc8kqfx3w8l8x3ps-php-xdebug-3.5.1"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/n3fcagdydpvdmi926f8rzxbapq09w2b8-php-xdebug-3.5.0",
+              "path": "/nix/store/718jfg4cm9vxav8k1ghjssq1cg9l1rg1-php-xdebug-3.5.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/n3fcagdydpvdmi926f8rzxbapq09w2b8-php-xdebug-3.5.0"
+          "store_path": "/nix/store/718jfg4cm9vxav8k1ghjssq1cg9l1rg1-php-xdebug-3.5.1"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/i3japy9xn974y3igki4kg4j60slmp2qn-php-xdebug-3.5.0",
+              "path": "/nix/store/4nd4ngvjcbx041r4wjr1p1r09c3lnj1d-php-xdebug-3.5.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/i3japy9xn974y3igki4kg4j60slmp2qn-php-xdebug-3.5.0"
+          "store_path": "/nix/store/4nd4ngvjcbx041r4wjr1p1r09c3lnj1d-php-xdebug-3.5.1"
         }
       }
     },
-    "php@8.4": {
-      "last_modified": "2025-04-12T15:53:49Z",
+    "php@8.4.20": {
+      "last_modified": "2026-04-16T08:46:55Z",
       "plugin_version": "0.0.3",
-      "resolved": "github:NixOS/nixpkgs/52d0eded529af34e91df6b2a2bc32eb636637cd2#php",
+      "resolved": "github:NixOS/nixpkgs/b86751bc4085f48661017fa226dee99fab6c651b#php",
       "source": "devbox-search",
-      "version": "8.4.6",
+      "version": "8.4.20",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/csvvxyf9zmqgksm6rjmqhgkxkkhdc5im-php-with-extensions-8.4.6",
+              "path": "/nix/store/zj95d0fi36w6r44ajihva1rdsifrdvcr-php-with-extensions-8.4.20",
               "default": true
             }
           ],
-          "store_path": "/nix/store/csvvxyf9zmqgksm6rjmqhgkxkkhdc5im-php-with-extensions-8.4.6"
+          "store_path": "/nix/store/zj95d0fi36w6r44ajihva1rdsifrdvcr-php-with-extensions-8.4.20"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/yvs5nkif217ynqi9gbyp13pgmwsmq2cy-php-with-extensions-8.4.6",
+              "path": "/nix/store/yvbwx6mszh8ybx5am9y6m8bvnm7nw44w-php-with-extensions-8.4.20",
               "default": true
             }
           ],
-          "store_path": "/nix/store/yvs5nkif217ynqi9gbyp13pgmwsmq2cy-php-with-extensions-8.4.6"
+          "store_path": "/nix/store/yvbwx6mszh8ybx5am9y6m8bvnm7nw44w-php-with-extensions-8.4.20"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/fgjgp4wqd79xcd2fr46kds7j93drad9p-php-with-extensions-8.4.6",
+              "path": "/nix/store/8gsa6vacpz9wmg2ry7gdszg029clvmk4-php-with-extensions-8.4.20",
               "default": true
             }
           ],
-          "store_path": "/nix/store/fgjgp4wqd79xcd2fr46kds7j93drad9p-php-with-extensions-8.4.6"
+          "store_path": "/nix/store/8gsa6vacpz9wmg2ry7gdszg029clvmk4-php-with-extensions-8.4.20"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/3b1dj6cm178gkmxjga0z7dx497bri79k-php-with-extensions-8.4.6",
+              "path": "/nix/store/pl8ks6dym3las0mir2a2zx6ywsk1p9d1-php-with-extensions-8.4.20",
               "default": true
             }
           ],
-          "store_path": "/nix/store/3b1dj6cm178gkmxjga0z7dx497bri79k-php-with-extensions-8.4.6"
+          "store_path": "/nix/store/pl8ks6dym3las0mir2a2zx6ywsk1p9d1-php-with-extensions-8.4.20"
         }
       }
     }

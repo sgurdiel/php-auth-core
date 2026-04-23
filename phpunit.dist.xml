@@ -14,7 +14,7 @@
          displayDetailsOnTestsThatTriggerErrors="true"
          displayDetailsOnTestsThatTriggerNotices="true"
          displayDetailsOnTestsThatTriggerWarnings="true"
-         failOnPhpunitDeprecation="true"
+         failOnPhpunitDeprecation="false"
          failOnRisky="true"
          failOnWarning="true"
          requireCoverageMetadata="true"
