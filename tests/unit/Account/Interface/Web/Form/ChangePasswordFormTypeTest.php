@@ -4,8 +4,11 @@ namespace Xver\SymfonyAuthBundle\Tests\unit\Account\Interface\Web\Form;
 
 use PHPUnit\Framework\Attributes\AllowMockObjectsWithoutExpectations;
 use PHPUnit\Framework\Attributes\CoversClass;
-use Symfony\Component\Form\Test\Traits\ValidatorExtensionTrait;
+use Symfony\Component\Form\Extension\Validator\ValidatorExtension;
 use Symfony\Component\Form\Test\TypeTestCase;
+use Symfony\Component\Validator\ConstraintViolationList;
+use Symfony\Component\Validator\Mapping\ClassMetadata;
+use Symfony\Component\Validator\Validator\ValidatorInterface;
 use Xver\SymfonyAuthBundle\Account\Interface\Web\Form\ChangePasswordFormType;
 
 /**
@@ -15,8 +18,6 @@ use Xver\SymfonyAuthBundle\Account\Interface\Web\Form\ChangePasswordFormType;
 #[AllowMockObjectsWithoutExpectations]
 class ChangePasswordFormTypeTest extends TypeTestCase
 {
-    use ValidatorExtensionTrait;
-
     public function testSubmitValidData(): void
     {
         $formData = [
@@ -54,5 +55,20 @@ class ChangePasswordFormTypeTest extends TypeTestCase
 
         $this->assertArrayHasKey('value', $view->vars);
         $this->assertSame($formData, $view->vars['value']);
+    }
+
+    protected function getExtensions(): array
+    {
+        $validator = $this->createStub(ValidatorInterface::class);
+        $metadata = $this->getMockBuilder(ClassMetadata::class)
+            ->setConstructorArgs([''])
+            ->onlyMethods(['addPropertyConstraint'])
+            ->getMock()
+        ;
+
+        $validator->method('getMetadataFor')->willReturn($metadata);
+        $validator->method('validate')->willReturn(new ConstraintViolationList());
+
+        return [new ValidatorExtension($validator)];
     }
 }
