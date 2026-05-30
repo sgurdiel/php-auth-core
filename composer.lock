@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ecbdcd2b90c01b6a8827548293456fbc",
+    "content-hash": "b979b4e11b606e51b5a14daed347608f",
     "packages": [
         {
             "name": "doctrine/collections",
@@ -3472,18 +3472,14 @@
                     "Xver\\PhpAppCoreBundle\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Xver\\PhpAppCoreBundle\\Tests\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "AGPL-3.0-or-later"
             ],
             "description": "Provides a PHP skeleton for developing new apps",
             "support": {
-                "source": "https://github.com/sgurdiel/php-app-core/tree/1.0.6",
-                "issues": "https://github.com/sgurdiel/php-app-core/issues"
+                "issues": "https://github.com/sgurdiel/php-app-core/issues",
+                "source": "https://github.com/sgurdiel/php-app-core/tree/1.0.6"
             },
             "time": "2026-05-30T18:12:40+00:00"
         }

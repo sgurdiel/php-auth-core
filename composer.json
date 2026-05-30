@@ -33,12 +33,6 @@
         "symfony/yaml": "^8.1",
         "vimeo/psalm": "^6.10"
     },
-    "repositories":[
-        {
-            "type": "vcs",
-            "url": "https://github.com/sgurdiel/php-app-core.git"
-        }
-    ],
     "config": {
         "sort-packages": true,
         "allow-plugins": {
