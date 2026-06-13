@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b979b4e11b606e51b5a14daed347608f",
+    "content-hash": "6efb9deac442ab831a5a72b228e98a36",
     "packages": [
         {
             "name": "doctrine/collections",
@@ -3442,21 +3442,21 @@
         },
         {
             "name": "xver/php-app-core",
-            "version": "1.0.6",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sgurdiel/php-app-core.git",
-                "reference": "ce8f895e922223d93d694c3893a0aa07a3ce8cc7"
+                "reference": "d5d5fa62aaad6eb0b80db1a852b8cd635b02ff13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sgurdiel/php-app-core/zipball/ce8f895e922223d93d694c3893a0aa07a3ce8cc7",
-                "reference": "ce8f895e922223d93d694c3893a0aa07a3ce8cc7",
+                "url": "https://api.github.com/repos/sgurdiel/php-app-core/zipball/d5d5fa62aaad6eb0b80db1a852b8cd635b02ff13",
+                "reference": "d5d5fa62aaad6eb0b80db1a852b8cd635b02ff13",
                 "shasum": ""
             },
             "require": {
                 "doctrine/collections": "^2.2 || ^3.0",
-                "php": "^8.4",
+                "php": "^8.5",
                 "symfony/http-kernel": "^8.1",
                 "symfony/translation": "^8.1"
             },
@@ -3479,9 +3479,9 @@
             "description": "Provides a PHP skeleton for developing new apps",
             "support": {
                 "issues": "https://github.com/sgurdiel/php-app-core/issues",
-                "source": "https://github.com/sgurdiel/php-app-core/tree/1.0.6"
+                "source": "https://github.com/sgurdiel/php-app-core/tree/1.0.8"
             },
-            "time": "2026-05-30T18:12:40+00:00"
+            "time": "2026-06-13T19:04:37+00:00"
         }
     ],
     "packages-dev": [
